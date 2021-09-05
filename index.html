@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bootstrap tutorial</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark mb-4">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="#">Bootstrap 5</a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#flex">Flex</a>
+                     </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#d-flex-vertical">Flex vertical</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#grid" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Grid 
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <li><a class="dropdown-item" href="#">grid</a></li>
+                           <li><a class="dropdown-item" href="#">grid</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#columns">Columns</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#containers">Container</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+         <main class="py-3 mt-3" id="home" >
+         	<div class="container " id="home">
+         		<h1 class="ml-auto text-center mt-4">Vartano</h1>
+         	<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quas voluptas commodi aut deserunt expedita aperiam tenetur voluptatum explicabo fugiat dolorem autem doloremque veniam culpa, dicta eligendi perspiciatis sit consequatur debitis ipsum ullam? Mollitia sed fuga eum illo fugit impedit dolores, ea neque ratione excepturi, tenetur quaerat molestias harum sunt praesentium iusto earum quia? Sit amet omnis tenetur a eius iste aliquid laborum dicta doloribus nulla, exercitationem inventore, reiciendis perspiciatis facere odit. Adipisci reprehenderit ipsa aliquid quae laborum qui. Corrupti et ipsam eum, molestias reiciendis, voluptatem, molestiae incidunt saepe, nemo perferendis sunt! Blanditiis pariatur velit distinctio tenetur eveniet dignissimos ducimus.</h5>
+         	</div>
+         </main>
+
+         <main>
+         <div class="container" id="flex">
+            <div class="starter-template text-center py-5 px-3">
+               <h1>d-flex Bootstrap 5</h1>
+            </div>
+         </div>
+         <div class="container">
+            <h4>flex-row</h4>
+            <div class="d-flex flex-row bg-dark mb-4">
+               <div class="p-2 bg-light border border-dark">Flex 1</div>
+               <div class="p-2 bg-light border border-dark">Flex 2</div>
+               <div class="p-2 bg-light border border-dark">Flex 3</div>
+            </div>
+            <h4>flex-row-reverse</h4>
+            <div class="d-flex flex-row-reverse bg-dark mb-4">
+               <div class="p-2 bg-light border border-dark">Flex 1</div>
+               <div class="p-2 bg-light border border-dark">Flex 2</div>
+               <div class="p-2 bg-light border border-dark">Flex 3</div>
+            </div>
+            <h4>justify-content-start</h4>
+            <div class="d-flex justify-content-start bg-dark  mb-4">
+               <div class="p-2 bg-light border border-dark">Flex 1</div>
+               <div class="p-2 bg-light border border-dark">Flex 2</div>
+               <div class="p-2 bg-light border border-dark">Flex 3</div>
+            </div>
+            <h4>justify-content-end</h4>
+            <div class="d-flex justify-content-end bg-dark  mb-4">
+               <div class="p-2 bg-light border border-dark">Flex 1</div>
+               <div class="p-2 bg-light border border-dark">Flex 2</div>
+               <div class="p-2 bg-light border border-dark">Flex 3</div>
+            </div>
+            <h4>justify-content-center</h4>
+            <div class="d-flex justify-content-center bg-dark  mb-4">
+               <div class="p-2 bg-light border border-dark">Flex 1</div>
+               <div class="p-2 bg-light border border-dark">Flex 2</div>
+               <div class="p-2 bg-light border border-dark">Flex 3</div>
+            </div>
+            <h4>justify-content-between</h4>
+            <div class="d-flex justify-content-between bg-dark  mb-4">
+               <div class="p-2 bg-light border border-dark">Flex 1</div>
+               <div class="p-2 bg-light border border-dark">Flex 2</div>
+               <div class="p-2 bg-light border border-dark">Flex 3</div>
+            </div>
+            <h4>justify-content-around</h4>
+            <div class="d-flex justify-content-around bg-dark mb-4">
+               <div class="p-2 bg-light border border-dark">Flex 1</div>
+               <div class="p-2 bg-light border border-dark">Flex 2</div>
+               <div class="p-2 bg-light border border-dark">Flex 3</div>
+            </div>
+            <h4>justify-content-evenly</h4>
+            <div class="d-flex justify-content-evenly bg-dark mb-4">
+               <div class="p-2 bg-light border border-dark">Flex 1</div>
+               <div class="p-2 bg-light border border-dark">Flex 2</div>
+               <div class="p-2 bg-light border border-dark">Flex 3</div>
+            </div>
+         </div>
+         </div>
+      </main>
+      <section-dflex-vertical>
+      	 <div class="container" id="d-flex-vertical">
+            <div class="starter-template text-center py-5 px-3">
+               <h1>d-flex Bootstrap 5</h1>
+            </div>
+         </div>
+         <div class="container">
+            <h4>align-items-start</h4>
+            <div class="d-flex justify-content-center align-items-start bg-dark mb-4 h100">
+               <div class="p-2 bg-light border border-dark">Flex 1</div>
+               <div class="p-2 bg-light border border-dark">Flex 2</div>
+               <div class="p-2 bg-light border border-dark">Flex 3</div>
+            </div>
+            <h4>align-items-end</h4>
+            <div class="d-flex justify-content-center align-items-end bg-dark mb-4 h100">
+               <div class="p-2 bg-light border border-dark">Flex 1</div>
+               <div class="p-2 bg-light border border-dark">Flex 2</div>
+               <div class="p-2 bg-light border border-dark">Flex 3</div>
+            </div>
+            <h4>align-items-center</h4>
+            <div class="d-flex justify-content-center align-items-center bg-dark mb-4 h100">
+               <div class="p-2 bg-light border border-dark">Flex 1</div>
+               <div class="p-2 bg-light border border-dark">Flex 2</div>
+               <div class="p-2 bg-light border border-dark">Flex 3</div>
+            </div>
+            <h4>align-items-baseline</h4>
+            <div class="d-flex justify-content-center align-items-baseline bg-dark mb-4 h100">
+               <div class="p-2 bg-light border border-dark">Flex 1</div>
+               <div class="p-2 bg-light border border-dark">Flex 2</div>
+               <div class="p-2 bg-light border border-dark">Flex 3</div>
+            </div>
+            <h4>align-items-stretch</h4>
+            <div class="d-flex justify-content-center align-items-stretch bg-dark mb-4 h100">
+               <div class="p-2 bg-light border border-dark">Flex 1</div>
+               <div class="p-2 bg-light border border-dark">Flex 2</div>
+               <div class="p-2 bg-light border border-dark">Flex 3</div>
+            </div>
+         </div>
+      </section-dflex-vertical>
+      <section id="grid">
+      	<div class="container">
+            <div class="starter-template text-center py-5 px-3">
+               <h1>Grid Bootstrap 5</h1>
+            </div>
+         </div>
+         <div class="container">
+		  <div class="row">
+			<div class="col border border-dark  py-2 mt-2">
+			  <h2>col</h2>
+			</div>
+			<div class="col border border-dark  py-2 mt-2">
+			  <h2>col</h2>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-lg border border-dark  py-2 mt-2">
+			  <h2>col-lg</h2>
+			</div>
+			<div class="col-lg border border-dark  py-2 mt-2">
+			  <h2>col-lg</h2>
+			</div>
+			<div class="col-lg border border-dark py-2 mt-2">
+			  <h2>col-lg</h2>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-md border border-dark  py-2 mt-2">
+			  <h2>col-md</h2>
+			</div>
+			<div class="col-md border border-dark  py-2 mt-2">
+			  <h2>col-md</h2>
+			</div>
+			<div class="col-md border border-dark py-2 mt-2">
+			  <h2>col-md</h2>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-sm border border-dark  py-2 mt-2">
+			  <h2>col-sm</h2>
+			</div>
+			<div class="col-sm border border-dark  py-2 mt-2">
+			  <h2>col-sm</h2>
+			</div>
+			<div class="col-sm border border-dark py-2 mt-2">
+			  <h2>col-sm</h2>
+			</div>
+			<div class="col-sm border border-dark py-2 mt-2">
+			  <h2>col-sm</h2>
+			</div>
+		  </div>
+		  
+		  <div class="row">
+			<div class="col-md border border-dark  py-2 mt-2">
+			  <h2>col-md</h2>
+			</div>
+			<div class="col-md border border-dark  py-2 mt-2">
+			  <h2>col-md</h2>
+			</div>
+			<div class="col-md-6 border border-dark py-2 mt-2">
+			  <h2>col-sm-6</h2>
+			</div>
+			<div class="col-md border border-dark py-2 mt-2">
+			  <h2>col-md</h2>
+			</div>
+			<div class="col-md border border-dark py-2 mt-2">
+			  <h2>col-md</h2>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col border border-dark  py-2 mt-2">
+			  <h2>col</h2>
+			</div>
+			<div class="col border border-dark  py-2 mt-2">
+			  <h2>col</h2>
+			</div>
+			<div class="col border border-dark py-2 mt-2">
+			  <h2>col</h2>
+			</div>
+			<div class="col border border-dark py-2 mt-2">
+			  <h2>col</h2>
+			</div>
+		  </div>
+		  
+		  <div class="row">
+			<div class="col-sm-2 border border-dark  py-2 mt-2">
+			  <h2>col-sm-2</h2>
+			</div>
+			<div class="col-sm border border-dark  py-2 mt-2">
+			  <h2>col-sm</h2>
+			</div>
+			<div class="col-sm-2 border border-dark  py-2 mt-2">
+			  <h2>col-sm-2</h2>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-sm-8 border border-dark  py-2 mt-2">
+			  <h2>col-sm-8</h2>
+			</div>
+			<div class="col-sm border border-dark  py-2 mt-2">
+			  <h2>col-sm</h2>
+			</div>
+		  </div>
+		</div>
+      </section>
+      <section-columns id="columns">
+      	<div class="container">
+            <div class="starter-template text-center py-5 px-3">
+               <h1>Columns with Bootstrap 5</h1>
+            </div>
+         </div>
+         <div class="container">
+		  <div class="row">
+			<div class="col-md-6 bg-dark text-light">
+			  <h2>1</h2>
+			</div>
+			<div class="col-md-6 order-md-2">
+			  <h2>2</h2>
+			</div>
+		   </div>
+			<div class="row">
+			<div class="col-md-6 bg-dark  text-light order-md-last">
+			  <h2>3</h2>
+			</div>
+			<div class="col-md-6 py-3">
+			  <h2>4</h2>
+			</div>
+			</div>
+			 <div class="row">
+			<div class="col-md-6 bg-dark  text-light">
+			  <h2>5</h2>
+			</div>
+			<div class="col-md-6 py-3">
+			  <h2>6</h2>
+			</div>
+			</div>
+			 <div class="row">
+			<div class="col-md-6 bg-dark  text-light order-md-last">
+			  <h2>7</h2>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6">
+			  <h2>8</h2>
+			</div>
+			</div>
+			 <div class="row">
+			<div class="col-md-6 bg-dark  text-light">
+			  <h2>9</h2>
+			</div>
+			<div class="col-md-6">
+			  <h2>10</h2>
+			</div>
+			</div>
+			 <div class="row">
+			<div class="col-md-6 bg-dark  text-light order-md-last">
+			  <h2>11</h2>
+			</div>
+			<div class="col-md-6 py-3">
+			  <h2>12</h2>
+			</div>
+			</div>
+		  </div>
+		</div>
+      </section-columns>
+      <section-container id="containers" class="mt-4">
+      	 <div class="container">
+            <div class="starter-template text-center py-5 px-3">
+               <h1>Containers Bootstrap 5</h1>
+            </div>
+         </div>
+         <div class="container-sm bg-secondary text-light py-2 mt-2">
+            <h2>container-sm</h2>
+         </div>
+         <div class="container-md bg-secondary text-light  py-2 mt-2">
+            <h2>container-md</h2>
+         </div>
+         <div class="container-lg bg-secondary text-light  py-2 mt-2">
+            <h2>container-lg</h2>
+         </div>
+         <div class="container-xl bg-secondary text-light  py-2 mt-2">
+            <h2>container-xl</h2>
+         </div>
+         <div class="container-xxl bg-secondary text-light  py-2 mt-2">
+            <h2>container-xxl</h2>
+         </div>
+      </section-container>
+</body>
+</html>
